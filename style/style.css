@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+}
+
+#div{
+    width: 95%;
+    text-align: center;
+    margin:37px;
+    height: 500px;
+    border: 1px solid red;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+}
+
+#div h1,h2,h3{
+    padding:50px;
+    color:white;
+}
+li{
+    margin-right: 48px;
+}
+.row{
+    padding:10px;
+    text-align: center;
+}
+.col i{
+    height: 100px;
+    padding:40px;
+    font-size: 35px;
+    color: blue;
+}
+#btn{
+    width: 800px;
+    height: 200px;
+    margin-left: 20px;
+}
