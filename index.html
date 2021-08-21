@@ -2,56 +2,131 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title>Document</title>
-<style>
-    body{
-        margin:0;
-    }
-    form{
-        margin:10px;
-        padding:10px;
-        display: inline-block;
-    }
-    h1{
-      
-        padding: 100px;
-    }
-    .container{
-        border:1px solid black;
-         width:700px;
-         height:350px;
-         margin:-45px auto;
-        
-    }
-    ul{
-        list-style-type: none;
-
-    }
-    
-</style>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-<body>
-<h1>Get the Weather Information from your place!</h1>
-<div class="container">
-    <form>
-        <label for="">Enter your city: </label>
-        <input type="text" id="cityname">
-        <button type="button" id="boutton" class="btn btn-warning p-1">Show me the current weather</button>
-     
-        </form>
-        <div class="weather"></div>
-    
+<body scrolling="yes">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <i class="fas fa-cloud"></i>
+          <a class="navbar-brand" style="color: rgb(0, 89, 255); margin-left: 10px;" href="#">
+            
+                          Weather App</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto " >
+              <li class="nav-item">
+                <a class="nav-link active" style="color: rgb(0, 89, 255);" aria-current="page" href="Current.html">Current</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: rgb(0, 89, 255);" href="#">Forecast</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: rgb(0, 89, 255);" href="#">Open Weather Map</a>
+              </li>
+            </ul>
+        
+          </div>
+        </div>
+      </nav>
+    <div class="container-fluid" id="div">
+        <h1>The most simplest weather app.It's simple.</h1>
+        <h2>Get weather information of any city.</h2>
+        <h3>Temperature | Pressure | Wind Speed | Humidity |</h3>
     </div>
-</div>
+    <h4 style="text-align: center; padding: 10px;">Welcome To Eddie's Weather App</h4>
+    <p style="padding: 10px; margin-left: 60px;">Eddie's Weather app is a web-based
+    application that allows users to search for current weather information as well
+    as weather forecast of different cities around the world.
+    <br>Users can search for 
+    weather information byu city name.Eddie's weather app uses
+                       the openweathermap API which is found at <a href="https://openweathermap.org/" target="_blank">www.openweathermap.org</a>
+    
+    </p>
+    
+   
+        <div class="row">
+           
+          <div class="col">
+            <i class="fas fa-sun"></i>
+         <h5>Weather API</h5>
+         <p>
+             Use openweathermap API to get weather,
+             <br>information of any city
+         </p>
+          </div>
+        
+          <div class="col">
+            <i class="fas fa-search"></i>
+            <h5>Search</h5>
+            <p>
+                Search for current weather information and
+                <br>weather forecast
+            </p>
 
-
+          </div>
+          <div class="col">
+            <i class="fas fa-check-circle"></i>
+            <h5>View result</h5>
+            <p>
+            Get information about temperature,
+            <br>pressure,Humidity etc
+        </p>
+          </div>
+        </div>
+        <div class="d-grid gap-2" >
+            <button class="btn btn-primary" style="background-color:rgb(0, 153, 255);width:95%; height:55px;margin-left: 30px;"  type="button">
+            Copyright ©  Weather App
+            </button>
+           
+          </div>
+        
 
     
-<!-- bootstrap -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+    
+    
+    
+    
+    
+        
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="script2.js"></script>
 </body>
 </html>
