@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
    <link rel="stylesheet" href="style/style.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -44,24 +43,37 @@
             <i class="fas fa-search"></i>
             <h5 style="color: rgb(60, 0, 255);">Enter City Name</h5>
             <p>
-                  <input id="cityname" type="text" placeholder="Enter city Name">
-                  <input style="width: 17%;" id="secondinput" type="number" placeholder="Number:Min-1 & Max -16">
-                  <button id="boutton" style="background-color: rgb(0, 119, 255); height: 30px; ">Search City</button>
+<input id="cityname" type="text" placeholder="Enter city Name">
+<input style="width: 17%;" id="secondinput" type="number" placeholder="Number:Min-1 & Max -16">
+<button id="boutton" style="background-color: rgb(0, 119, 255); height: 30px; ">
+  Search City</button>
              
             </p>
           </div>
       </div>
-      <h1 style="text-align:center;">Weather forecast for Rabat,MA</h1>
+      <h1 style="text-align:center;" id="h1"></h1>
       <table border="1" id="table" class="table table-success table-striped">
-    
+          <thead>
+            <tr>
+              <tr>
+                <th>Icon</th>
+                <th>Weather</th>
+                <th>Description</th>
+                <th>Morning <br>Temperature</th>
+                <th>Night<br> Temperature</th>
+                <th>Min.<br>Temperature</th>
+                <th>Max.<br>Temperature</th>
+                <th>Pressure</th>
+                <th>Humidity</th>
+                <th>Wind<br> Speed</th>
+                <th>Wind<br> Direction</th>
+                </tr>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+
+          </tbody>
       </table>
-      
-          
-
-
-
-
-
    <script src="forecast.js"></script> 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <!-- bootstrap -->
